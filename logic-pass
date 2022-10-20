@@ -1,0 +1,44 @@
+#              Q3
+text = "this is test"
+removechar = 's'
+newText = ""
+i = 0
+while i < len(text):
+    if text[i] != removechar:
+        newText = newText + text[i]
+    i = i + 1
+print(newText)
+
+
+
+
+#             Q2
+
+low, high = 2, 10
+primes = []
+for i in range(low, high + 1):
+    flag = 0
+    if i < 2:
+        continue
+    if i == 2:
+        primes.append(2)
+        continue
+    for x in range(2, i):
+        if i % x == 0:
+            flag = 1
+            break
+    if flag == 0:
+        primes.append(i)
+print(primes)
+
+
+#             Q3
+text = "chek how many characters are in there in the text"
+char = 'e'
+total = 0
+i = 0
+while i < len(text):
+    if text[i] == char:
+        total = total + 1
+    i = i + 1
+print(str(total)+ " --> " + "charecter in sentense")
